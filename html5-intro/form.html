@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Form</title>
+    <style>
+        *{
+            /*   */
+            color: white;
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;
+            }
+        fieldset{
+            margin-top: 20px;
+            width: fit-content;
+        }
+        .button{
+            /* display: inline-block; */
+            margin-top: 10px;
+            /* margin-right: 5px; */
+            color: black;
+        }
+        button{
+            color: black;
+        }
+        head, body{
+            background-image: url(images/Superheroes/Batman.jpg);
+            background-size: cover  ;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="">Home</a> </li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="semantic.html">Semantic</a></li>
+                    <li><a href="table.html">Table</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Welcome to Rakib Gaming</h2>
+        <form>
+            <label for=""> Your Name:
+                <input id="name" type="text" placeholder="Your Name" class="button" >
+            </label>
+            
+            <label for=""> Your Email: 
+                <input id="mail" type="email" placeholder="Your Email" class="button">
+            </label>
+            <label for=""> Your Mobile : 
+                <input id="number" type="number" placeholder="Your Mobile no."class="button">
+            </label>
+            <fieldset>
+                <legend>Pick your favourite </legend>
+                <label for="iPhone">
+                    <input type="radio" name="phone" id="iPhone">
+                    iPhone 13
+                </label>
+                <label for="samsung">
+                    <input type="radio" name="phone" id="samsung">
+                    S22 ultra
+                </label>
+                <label for="google">
+                    <input type="radio" name="phone" id="google">
+                    Pixel 7
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Select One or Multiple fruits 
+                </legend>
+                <label for="Apple">
+                    <input type="checkbox" name="fruits" id="apple">
+                    Apple
+                </label>
+                <label for="Mango">
+                    <input type="checkbox" name="fruits" id="mango">
+                    Mango
+                </label>
+                <label for="Banana">
+                    <input type="checkbox" name="fruits" id="banana">
+                    Banana
+                </label>
+                <label for="Orange">
+                    <input type="checkbox" name="fruits" id="orange">
+                    Orange
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Special Instruction here:
+                </legend>
+                <label for="instructons">
+                <textarea name="" id="" cols="60" rows="4" class="button"></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+            
+        </form>
+    </body>
+</html>
